@@ -1,0 +1,86 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    min-height: 100vh;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(45deg,black,gray);
+
+}
+
+
+.calculator{
+padding: 15px;
+box-shadow: 0 0 15px black;
+border: 2px solid gray;
+border-radius: 15px;
+}
+.displayvalue input{
+width: 300px;
+padding: 20px;
+border: none;
+outline: none;
+background-color: transparent;
+margin: 20px;
+font-size: 40px;
+text-align: right;
+color: white;
+cursor: pointer;
+}
+input::placeholder{
+    color: white;
+}
+button{
+    width: 70px;
+    height: 70px;
+    margin: 10px;
+    background: transparent;
+    font-size: 22px;
+    font-weight: 600;
+    border: 0;
+    box-shadow: -5px -6px 15px black;
+    border-radius: 50%;
+    outline: 1px solid #313131;
+    outline-offset: 2px;
+    cursor: pointer;
+    
+}
+button:active{
+    background-color: black;
+    transform: translate(2px,2px);
+}
+.oper{
+    color:#fbff004d;
+    background-color: #313131;
+}
+#eqbtn{
+    background: orange;
+    font-weight: 800;
+}
+@media screen and (max-width: 416px) {
+   
+     .calculator{
+        padding: 8px;
+        border-radius: 8px;
+        }
+        .displayvalue input{
+        width: 250px;
+        padding: 10px;
+        margin: 10px;
+        font-size: 20px;
+        }
+      
+        button{
+            width: 50px;
+            height: 50px;
+            margin: 8px;
+            font-size: 12px;
+            
+        }
+  }
